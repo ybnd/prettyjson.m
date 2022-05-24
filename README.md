@@ -1,7 +1,6 @@
 # prettyjson.m [![View prettyjson.m on MATLAB File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://nl.mathworks.com/matlabcentral/fileexchange/72667-prettyjson-m)
 
 Basic function to make JSON strings formatted by MATLAB's built-in `jsonencode.m` more readable. 
-Mostly meant for structures with simple strings and arrays; gets confused and **mangles** JSON when strings contain `[` `]` `{` or `}`. 
 
 Example: the following [mess](https://gist.github.com/tlongren/7697704d62f26235661e)
 
