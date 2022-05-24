@@ -3,7 +3,7 @@ function less_ugly = prettyjson(ugly)
 % Probably inefficient
 
     MAX_ARRAY_WIDTH = 80;
-    TAB = sprintf('    ');
+    TAB = '    ';
 
     % Modification to leave the {}[] as is when inside ""
     % #####################################################################
