@@ -14,7 +14,7 @@ function [less_ugly] = prettyjson(ugly)
     ugly = strrep(ugly, ',{', sprintf(', \n{'));
 
     indent = 0;
-    lines = splitlines(ugly);
+    lines = strsplit(ugly, '\n');
 
     for i = 1:length(lines)
         line = lines{i};
@@ -50,7 +50,7 @@ function [less_ugly] = prettyjson(ugly)
             end
         end
 
-        sublines = splitlines(line);
+        sublines = strsplit(line, '\n');
         for j = 1:length(sublines)
             if j > 1   % todo: dumb to do this check at every line...
                 sublines{j} = sprintf('%s%s', repmat(TAB, 1, indent+next_indent), sublines{j});
