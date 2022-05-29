@@ -1,3 +1,5 @@
+:warning: [ as of MATLAB>2021a, `jsonencode` itself supports pretty printing](https://nl.mathworks.com/matlabcentral/answers/478932-convert-struct-to-readable-json-pretty-print#answer_884815)
+
 # prettyjson.m [![View prettyjson.m on MATLAB File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://nl.mathworks.com/matlabcentral/fileexchange/72667-prettyjson-m)
 
 Basic function to make JSON strings formatted by MATLAB's built-in `jsonencode.m` more readable. 
