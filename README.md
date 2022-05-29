@@ -47,3 +47,13 @@ becomes
     }
 }
 ```
+
+### Running unit tests
+
+These have only been tested under Octave 7.1 and are known to fail for older versions. I currently don't have a MATLAB license, so I haven't been able to check how it works there.
+
+1. Install [MOxUnit](https://github.com/MOxUnit/MOxUnit)
+2. Run
+   ```shell
+   octave --no-gui --eval "moxunit_set_path;moxunit_runtests('tests/moxunit.m')"
+   ```

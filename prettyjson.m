@@ -63,9 +63,9 @@ function [less_ugly] = prettyjson(ugly)
             indent = indent + 1;
         end
         indent = indent + next_indent;
-        lines{i} = strjoin(sublines, newline); 
+        lines{i} = strjoin(sublines, '\n'); 
 
     end
 
-    less_ugly = strjoin(lines, newline);
+    less_ugly = strjoin(lines, '\n');
 end
